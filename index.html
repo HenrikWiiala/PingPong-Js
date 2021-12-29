@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Henrik Wiiala Pingpong</title>
+<style>
+    .myscore {
+        left: 0;
+        top: 100;
+    }
+
+    .lose {
+        top: 200px;
+        left: 500px;
+        font-size: 75px;
+        color: red;
+        position: absolute;
+
+        visibility: hidden;
+    }
+
+    .win {
+        top: 200px;
+        left: 500px;
+        font-size: 75px;
+        color: blue;
+        position: absolute;
+
+        visibility: hidden;
+    }
+</style>
+</head>
+<body>
+<canvas id="c" width="320" height="480" style="border: 1px solid black; margin: 0 auto; display: block;"></canvas>
+
+    <div class="myscore" id="myscore"></div>
+    <div class="compscore" id="compscore"></div>
+    <div class="win" id="win">You win!</div>
+    <div class="lose" id="lose">You lose!</div>
+
+<script src="js/script2.js"></script>
+</body>
+</html>
